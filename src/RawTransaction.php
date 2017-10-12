@@ -1066,7 +1066,7 @@ class RawTransaction
                 'txid' => $input['txid'],
                 'vout' => $input['vout'],
                 'sequence' => (isset($input['sequence'])) ? $input['sequence'] : 4294967295,
-                'scriptSig' => ['hex' => '']
+                'scriptSig' => ['hex' => $input['scriptPubKey']]
             ];
         }
 
